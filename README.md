@@ -70,3 +70,4 @@ This web application enables users to interact with three AI-powered services th
 
 ## Screenshots
 
+![Main](https://github.com/user-attachments/assets/542600ad-4252-4c04-aa83-1c2ebc13f84d)
