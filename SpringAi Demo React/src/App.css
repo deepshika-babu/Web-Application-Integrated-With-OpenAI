@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0; /* Ensure no unwanted margin */
+  padding: 0; /* Reset body padding */
+}
+
+
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 30px auto; /* Margin on all sides to center the app and add spacing */
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid #ddd; /* Adding a border */
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 10px; /* Adding padding for more breathing room */
+  border-bottom: 2px solid #ddd; /* Adding a bottom border for visual separation */
+}
+
+button {
+  padding: 12px 25px;
+  cursor: pointer;
+  border: 2px solid #ccc; /* More defined border */
+  background-color: #e0e0e0;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  margin: 5px; /* Adding space between buttons */
+}
+
+button:hover {
+  background-color: #c7c7c7;
+}
+
+button.active {
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+input {
+  padding: 12px;
+  width: calc(100% - 24px);
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.tab-content {
+  margin-top: 25px;
+  padding: 15px; /* Adding padding for content spacing */
+  border: 1px solid #ddd; /* Adding a border around the tab content */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 25px;
+  padding: 10px; /* Padding around the grid */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.empty-image-slot {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* Maintain aspect ratio for empty slot */
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+  margin: 10px; /* Adding margin around the empty image slot */
+}
+
+.empty-image-slot:hover {
+  background-color: #f1f1f1;
+}
+
+.output {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Added border for better structure */
+}
+
+.recipe-text {
+  max-width: 100%;
+  padding: 20px; /* Extra padding for content spacing */
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-y: auto;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px; /* Add space above */
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  text-align: left; /* Ensure text is left-aligned */
+}
