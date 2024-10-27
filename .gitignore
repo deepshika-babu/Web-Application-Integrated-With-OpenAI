@@ -131,3 +131,4 @@ dist
 
 #Environment Variables
 .env
+SpringAiDemo/src/main/resources/application.properties
